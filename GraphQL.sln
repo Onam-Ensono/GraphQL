@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CE8EB29F-B8E7-49AA-A847-A8317CF45E5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph.API", "Graph.API\Graph.API.csproj", "{E8A45B7D-62E3-4BC0-9816-28999280A320}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E8A45B7D-62E3-4BC0-9816-28999280A320} = {CE8EB29F-B8E7-49AA-A847-A8317CF45E5E}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8A45B7D-62E3-4BC0-9816-28999280A320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A45B7D-62E3-4BC0-9816-28999280A320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A45B7D-62E3-4BC0-9816-28999280A320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A45B7D-62E3-4BC0-9816-28999280A320}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
