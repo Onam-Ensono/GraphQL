@@ -15,9 +15,7 @@ public class Query
     }
     
     [UseDbContext(typeof(FooDbContext))]
-    [UseFiltering]
-    [UseSorting]
-    public IQueryable<Customer> Customers([ScopedService] FooDbContext context, string customerId)
+    public IQueryable<Customer> CustomerById([ScopedService] FooDbContext context, string customerId)
     {
         var customers = context.Customers.Where(x => x.CustomerId == customerId);
         return customers;

@@ -6,6 +6,7 @@ using Graph.API.Mutations;
 using Graph.API.Queries;
 using Graph.API.Schemas;
 using Graph.API.Services;
+using Graph.API.Subscriptions;
 using Graph.API.Validators;
 using Microsoft.EntityFrameworkCore;
 
@@ -29,12 +30,17 @@ builder
     // Mutations
     .AddMutationConventions(applyToAllMutations: true)
     .AddMutationType<Mutation>()
+    // Subscriptions
+    .AddSubscriptionType<Subscription>()
+    .AddInMemorySubscriptions()
     // Validation
     .AddFluentValidation()
     .AddFiltering()
     .AddSorting();
 
 var app = builder.Build();
+
+app.UseWebSockets(); // Needed for 
 
 using (var scope = app.Services.CreateScope())
 {
